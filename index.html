@@ -39,6 +39,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <nav class="nav">
             <a class="nav__logo link" href="./index.html">
                 <span class="nav__logo--accent">Web</span>Studio</a>
+
+                <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                  <svg class="menu-btn__icon" width="40" height="40">
+                    <use href="./images/gallery/icons.svg#icon-menu"></use>
+                  </svg>
+                </button>
+          
+                <div class="mobile-menu js-menu-container" id="mobile-menu">
+
+                  <button class="menu-btn js-close-menu" type="button">
+                    <svg class="menu-btn__icon" width="40" height="40">
+                      <use href="./images/gallery/icons.svg#icon-menu_close"></use>
+                    </svg>
+                  </button>
+                
             <ul class="nav__list list">
                 <li class="nav__item">
                     <a class="nav__link--page link" href="./index.html">Studio</a></li>
@@ -66,6 +81,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                     </svg>
                     +38 096 111 11 11</a></li>
         </ul>
+network
+        <ul class="menu-network">
+          <li class="menu-network__item">
+            <a class="menu-network__link link" href="./">Instagram</a>
+          </li>
+          <li class="menu-network__item">
+            <a class="menu-network__link link" href="./">Twitter</a>
+          </li>
+          <li class="menu-network__item">
+            <a class="menu-network__link link" href="./">Facebook</a>
+          </li>
+          <li class="menu-network__item">
+            <a class="menu-network__link link" href="./">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
     </header>
 
@@ -139,13 +171,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <ul class="about__list list card-set">
             <li class="list__item">
               <div class="about__thumb">
-        <img
+                <picture>
+                <source srcset="" media="">
+                <source srcset="./images/gallery/whatwedo/desktop@1x.jpg 1x, ./images/gallery/whatwedo/desktop@2x.jpg 2x" media="(min-width: 1200px)">
+          <img       
           class="img"
           src="./images/gallery/whatwedo/image-whatwedo-1.jpg"
           alt="Report"
           width="370"
           height="294"
         />
+      </picture>
+
         <div class="about__overlay">
           <p class="about__overlay-description"> 
             DESKTOP APPS
