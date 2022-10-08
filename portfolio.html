@@ -23,6 +23,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
 </head>
 
 <body>
+
     <header class="header">
         <div class="header__container container">
             
@@ -30,11 +31,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
             <nav class="nav">
                 <a class="nav__logo link" href="./index.html">
                     <span class="nav__logo--accent">Web</span>Studio</a>
+    
+                    <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-btn__icon" width="40" height="40">
+                        <use href="./images/gallery/icons.svg#icon-menu"></use>
+                    </svg>
+                    </button>
+            
+                    <div class="mobile-menu js-menu-container" id="mobile-menu">
+    
+                    <button class="menu-btn js-close-menu" type="button">
+                        <svg class="menu-btn__icon" width="40" height="40">
+                        <use href="./images/gallery/icons.svg#icon-menu_close"></use>
+                        </svg>
+                    </button>
+                    
                 <ul class="nav__list list">
                     <li class="nav__item">
-                        <a class="nav__link link" href="./index.html">Studio</a></li>
+                        <a class="nav__link--page link" href="./index.html">Studio</a></li>
                     <li class="nav__item">
-                        <a class="nav__link--page  link" href="./portfolio.html">Portfolio</a></li>
+                        <a class="nav__link link" href="./portfolio.html">Portfolio</a></li>
                     <li class="nav__item">
                         <a class="nav__link link" href="">Contacts</a></li>
                 </ul>
@@ -57,6 +73,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+    
+            <ul class="menu-network">
+            <li class="menu-network__item">
+                <a class="menu-network__link link" href="./">Instagram</a>
+            </li>
+            <li class="menu-network__item">
+                <a class="menu-network__link link" href="./">Twitter</a>
+            </li>
+            <li class="menu-network__item">
+                <a class="menu-network__link link" href="./">Facebook</a>
+            </li>
+            <li class="menu-network__item">
+                <a class="menu-network__link link" href="./">Linkedin</a>
+            </li>
+            </ul>
+        </div>
+    
         </div>
         </header>
     
@@ -91,13 +124,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 <li class="projects__item card-set">
                     <a class="projects__link" href="./portfolio.html">
                     <div class="projects__thumb">
+
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-1@1x.webp 1x, ./images/gallery/portfolio/desktop/project-1@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-1t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-1t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-1m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-1m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-1@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-1@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-1t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-1t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-1m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-1m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-people-1.jpg"
+                    src="./images/gallery/portfolio/desktop/project-1@1x.jpg"
                     alt="our people make the difference"
-                    width="370"
-                    height="294"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                 <div class="overlay">
                     <p class="overlay__description">
                     Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.
@@ -112,13 +169,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="project__link" href="./portfolio.html">
+                        
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-2@1x.webp 1x, ./images/gallery/portfolio/desktop/project-2@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-2t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-2t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-2m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-2m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-2@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-2@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-2t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-2t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-2m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-2m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-basketball-players-2.jpg"
+                    src="./images/gallery/portfolio/desktop/project-2@1x.jpg"
                     alt="basketball players"
-                    width="370"
-                    height="294"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Poster New Orlean vs Golden Star</h2>
                         <p class="projects__description">Design</p>
@@ -127,13 +208,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="projects__link" href="./portfolio.html">
+                        
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-3@1x.webp 1x, ./images/gallery/portfolio/desktop/project-3@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-3t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-3t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-3m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-3m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-3@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-3@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-3t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-3t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-3m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-3m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-fish-3.jpg"
-                    alt="Fish"
-                    width="370"
-                    height="294"
+                    src="./images/gallery/portfolio/desktop/project-3@1x.jpg"
+                    alt="fish"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Seafood Restaurant </h2>
                         <p class="projects__description">Apps</p>
@@ -142,13 +247,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="projects__link" href="./portfolio.html">
+                        
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-4@1x.webp 1x, ./images/gallery/portfolio/desktop/project-4@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-4t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-4t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-4m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-4m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-4@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-4@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-4t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-4t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-4m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-4m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-headphone-4.jpg"
+                    src="./images/gallery/portfolio/desktop/project-4@1x.jpg"
                     alt="headphone"
-                    width="370"
-                    height="294"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Project Prime</h2>
                         <p class="projects__description">Marketing</p>
@@ -157,13 +286,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="projects__link" href="./portfolio.html">
+                        
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-5@1x.webp 1x, ./images/gallery/portfolio/desktop/project-5@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-5t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-5t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-5m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-5m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-5@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-5@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-5t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-5t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-5m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-5m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-boxes-5.jpg"
-                    alt="Two boxes"
-                    width="370"
-                    height="294"
+                    src="./images/gallery/portfolio/desktop/project-5@1x.jpg"
+                    alt="boxes"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Project Boxes</h2>
                         <p class="projects__description">Apps</p>
@@ -172,13 +325,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="projects__link" href="./portfolio.html">
+                    
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-6@1x.webp 1x, ./images/gallery/portfolio/desktop/project-6@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-6t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-6t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-6m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-6m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-6@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-6@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-6t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-6t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-6m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-6m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-monitor-6.jpg"
-                    alt="Monitor"
-                    width="370"
-                    height="294"
+                    src="./images/gallery/portfolio/desktop/project-6@1x.jpg"
+                    alt="monitor"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Inspiration has no Borders</h2>
                         <p class="projects__description">Web-site</p>
@@ -187,13 +364,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="link" href="./portfolio.html">
+                        
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-7@1x.webp 1x, ./images/gallery/portfolio/desktop/project-7@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-7t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-7t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-7m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-7m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-7@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-7@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-7t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-7t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-7m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-7m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-book-7.jpg"
-                    alt="magazine with an article"
-                    width="370"
-                    height="294"
+                    src="./images/gallery/portfolio/desktop/project-7@1x.jpg"
+                    alt="book"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Limited Edition</h2>
                         <p class="projects__description">Design</p>
@@ -202,13 +403,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="projects__link" href="./portfolio.html">
+                        
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-8@1x.webp 1x, ./images/gallery/portfolio/desktop/project-8@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-8t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-8t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-8m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-8m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-8@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-8@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-8t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-8t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-8m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-8m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-label-8.jpg"
-                    alt="label tag"
-                    width="370"
-                    height="294"
+                    src="./images/gallery/portfolio/desktop/project-8@1x.jpg"
+                    alt="label"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Project LAB</h2>
                         <p class="projects__description">Marketing</p>
@@ -217,13 +442,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                 </li>
                 <li class="projects__item card-set">
                     <a class="projects-link" href="./portfolio.html">
+                        
+                        <picture>
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-9@1x.webp 1x, ./images/gallery/portfolio/desktop/project-9@2x.webp 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-9t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-9t@2x.webp 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-9m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-9m@2x.webp 2x"
+                            media="(max-width: 767px)" />
+        
+                            <source
+                            srcset="./images/gallery/portfolio/desktop/project-9@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-9@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/tablet/project-9t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-9t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source
+                            srcset="./images/gallery/portfolio/mobile/project-9m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-9m@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        
                         <img
                     class="img"
-                    src="./images/gallery/portfolio/image-laptop-9.jpg"
+                    src="./images/gallery/portfolio/desktop/project-9@1x.jpg"
                     alt="laptop"
-                    width="370"
-                    height="294"
+                    width="450"
+                    height=""
                     />
+                </picture>
+
                     <div class="projects__info">
                         <h2 class="projects__title">Growing Business</h2>
                         <p class="projects__description">Apps</p>
@@ -332,6 +581,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
     
     </footer>
         
-        
+    <script src="./js/mobile-menu.js"></script>
+    
     </body>
     </html>
