@@ -88,7 +88,7 @@
             display: flex;
             line-height: calc(16 / 14);
             align-items: center;
-            color: var(--txt-cl);
+            color: $txt-cl;
             letter-spacing: 0.02em;
             font-weight: 500;
             @include transition(color);

@@ -2,11 +2,15 @@
 @import './utils/visually-hidden';
 @import './utils/mixins';
 
-@import './base/base';
 @import './base/reset';
-@import './base/card-set';
 @import './base/container';
-@import './base/section';
+
+@import'./components/base';
+@import './components/card-set';
+@import'./components/section';
+@import './components/soc-network';
+@import './components/modal';
+@import './components/register-form';
 
 
 @import './layout/header';
@@ -19,11 +23,4 @@
 @import './layout/subscription';
 @import './layout/portfolio';
 @import './layout/portfolio';
-
-@import './components/soc-network';
-@import './components/modal';
-@import './components/register-form';
-
-
-
 
