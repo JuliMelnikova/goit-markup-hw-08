@@ -1,0 +1,13 @@
+@mixin transition($value) {
+    transition: $value $animtime $animfunction;
+}
+
+@mixin transition-first($value-c, $value-bg) {
+    transition: $value-c $animtime $animfunction,
+        $value-bg $animtime $animfunction;
+}
+
+@mixin transition-second($value-c, $value-bg, $value-b) {
+    transition: $value-c $animtime $animfunction,
+        $value-bg $animtime $animfunction, $value-b $animtime $animfunction;
+}

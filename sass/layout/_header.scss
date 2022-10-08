@@ -1,0 +1,110 @@
+.header {
+    border-bottom: 1px solid $border-bg-color;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    
+        font-family: $secondary-font;
+        line-height: calc(31 / 26);
+        font-size: 26px;
+        font-weight: 700;
+        color: $main-txt-cl;
+        @include transition(color);
+        }
+    
+        &__logo:hover,
+        &__logo:focus {
+        color: $brand-txt-cl;
+        }
+    
+        &__logo--accent {
+        color: $brand-txt-cl;
+        }
+    
+        &__list {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-left: 97px;
+        }
+    
+        &__item {
+        font-weight: 500;
+        }
+    
+        &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        line-height: calc(16 / 14);
+        color: $main-txt-cl;
+        letter-spacing: 0.02em;
+        @include transition(color);
+        }
+    
+        &__link--page {
+        position: relative;
+        color: $brand-txt-cl;
+        @include transition(color);
+        }
+    
+        &__link--page::after {
+        content:"";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $brand-txt-cl;
+        bottom: -33px;
+        }
+        
+        &__link:hover,
+        &__link:focus {
+        color: $brand-txt-cl;
+        }
+}
+
+    .communication {
+        &__group {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-left: auto;
+            }
+        
+            &__link {
+            display: flex;
+            line-height: calc(16 / 14);
+            align-items: center;
+            color: var(--txt-cl);
+            letter-spacing: 0.02em;
+            font-weight: 500;
+            @include transition(color);
+            }
+        
+            &__link:hover,
+            &__link:focus {
+            color: $brand-txt-cl;
+            }
+        
+            &__item {
+            margin-right: 10px;
+            fill: currentColor;
+            }
+    }
+    
+    
+    
+    

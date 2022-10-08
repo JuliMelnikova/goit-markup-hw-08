@@ -1,0 +1,93 @@
+.subscription {
+    margin-left: 93px;
+
+    &__title {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $accent-txt-cl;
+        margin-bottom: 20px;
+        }
+        
+        &__form {
+        display: flex;
+        align-items: flex-end;
+        }
+        
+        &__input {
+        display: inline-block;
+        width: 358px;
+        height: 50px;
+        
+        
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: transparent;
+        
+        margin-right: 12px;
+        
+        outline: transparent;
+        @include transition(border-color);
+        }
+        
+        &__input::placeholder {
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        }
+        
+        &__input:focus {
+        border-color: $brand-txt-cl;
+        color: $accent-txt-cl;
+        }
+    }
+
+    
+    .btn {
+        &--send {
+            width: 200px;
+            height: 50px;
+            
+            background-color: $buttons-bg-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            
+            font-weight: 700;
+            font-size: 16px;
+            line-height: calc(30 / 16);
+            
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+            
+            cursor: pointer;
+            
+            color: $accent-txt-cl;
+            justify-content: center;
+            @include transition(background-color);
+            }
+            
+            &__icon--send {
+            fill: currentColor;
+            margin-left: 12px;
+            }
+            
+            &--send:hover,
+            &--send:focus {
+            background-color: #21cbf3;
+            }
+    }
+    
+    

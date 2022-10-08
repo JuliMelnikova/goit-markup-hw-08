@@ -1,0 +1,43 @@
+.work {
+    padding-bottom: 0;
+
+    &__list {
+        display: flex;
+        gap: $indent;
+        padding-left: 0;
+    }
+    
+    &__item {
+        width: 270px;
+    }
+    
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 270px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background-color: $accent-bg-cl;
+    }
+    
+    &__icon--item {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    &__title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        text-transform: uppercase;
+    }
+    
+    &__description {
+    line-height: calc(24 / 14);
+    color: $txt-cl;
+    width: 270px;
+    }
+}
+

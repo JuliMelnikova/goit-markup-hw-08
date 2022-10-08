@@ -1,0 +1,46 @@
+.customers {
+    background-size: cover;
+
+    &__title {
+        font-size: 36px;
+        line-height: calc(42 / 36);
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    &__list {
+        display: flex;
+        flex: wrap;
+        gap: $indent;
+    }
+    
+    &__link {
+    display: flex;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: $socials-txt-cl;
+    @include transition-first(border-color, box-shadow);
+    }
+    
+    &__icon {
+    fill: currentColor;
+    @include transition(fill);
+    }
+    
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+    color: $brand-txt-cl;
+    }
+    
+    &__link:hover,
+    &__link:focus {
+    border-color: $buttons-bg-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
