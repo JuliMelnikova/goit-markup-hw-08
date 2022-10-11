@@ -21,565 +21,509 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
 <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 
+
 <body>
-    <header class="header">
-        <div class="header__container container">
-            
-            <!-- Navigation -->
-            <nav class="nav">
-                <a class="nav__logo link" href="./index.html">
-                    <span class="nav__logo--accent">Web</span>Studio</a>
-    
-                    <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg class="menu-btn__icon" width="40" height="40">
-                        <use href="./images/gallery/icons.svg#icon-menu"></use>
-                    </svg>
-                    </button>
-            
-                    <div class="mobile-menu js-menu-container" id="mobile-menu">
-    
-                    <button class="menu-btn js-close-menu" type="button">
-                        <svg class="menu-btn__icon" width="40" height="40">
-                        <use href="./images/gallery/icons.svg#icon-menu_close"></use>
-                        </svg>
-                    </button>
-                    
-                <ul class="nav__list list">
-                    <li class="nav__item">
-                        <a class="nav__link--page link" href="./index.html">Studio</a></li>
-                    <li class="nav__item">
-                        <a class="nav__link link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="nav__item">
-                        <a class="nav__link link" href="">Contacts</a></li>
-                </ul>
-            </nav>
-    
-            <!-- List -->
-            <ul class="communication__group list">
-                <li class="communication__list list">
-                    <a class="communication__link" href="mailto:info@example.com">
-                    <svg class="communication__item" width="16"  height="12">
-                        <use href="./images/gallery/icons.svg#icon-mail"></use>
-                    </svg>
-                        info@example.com
-                    </a>
-                </li>
-                <li class="communication__list list">
-                    <a class="communication__link" href="tel:+380961111111">
-                        <svg class="communication__item" width="10"  height="16">
-                            <use href="./images/gallery/icons.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
+
+    <header class="page-header">
+    <div class="container page-header__container">
+        <!-- navigation -->
+
+        <a class="logo page-header__logo link" href="./index.html">Web<span class="logo__accent--dark">Studio</span></a>
+
+        <button class="mobile-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="mobile-btn__icon" width="40" height="40">
+            <use href="./images/gallery/icons.svg#icon-menu"></use>
+        </svg>
+        </button>
+
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="mobile-btn js-close-menu" type="button">
+            <svg class="mobile-btn__icon" width="40" height="40">
+            <use href="./images/gallery/icons.svg#icon-menu_close"></use>
+            </svg>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+            <li class="item nav__item"><a class="link nav__link nav__link" href="./index.html">Studio</a>
+            </li>
+            <li class="item nav__item"><a class="link nav__link--page" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item nav__item"><a class="link nav__link" href="">Contacts</a></li>
             </ul>
-    
-            <ul class="menu-network">
-            <li class="menu-network__item">
-                <a class="menu-network__link link" href="./">Instagram</a>
+        </nav>
+
+        <ul class="contacts">
+            <li class="item contacts__item">
+            <a class="link contacts__link contacts__link--tel" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/gallery/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
             </li>
-            <li class="menu-network__item">
-                <a class="menu-network__link link" href="./">Twitter</a>
+            <li class="item contacts__item">
+            <a class="link contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/gallery/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a>
             </li>
-            <li class="menu-network__item">
-                <a class="menu-network__link link" href="./">Facebook</a>
+        </ul>
+        <ul class="menu-social">
+            <li class="item menu-social__item">
+            <a class="link menu-social__link" href="./">Instagram</a>
             </li>
-            <li class="menu-network__item">
-                <a class="menu-network__link link" href="./">Linkedin</a>
+            <li class="item menu-social__item">
+            <a class="link menu-social__link" href="./">Twitter</a>
             </li>
-            </ul>
+            <li class="item menu-social__item">
+            <a class="link menu-social__link" href="./">Facebook</a>
+            </li>
+            <li class="item menu-social__item">
+            <a class="link menu-social__link" href="./">Linkedin</a>
+            </li>
+        </ul>
         </div>
-    
-        </div>
-        </header>
-    
-        <main>
-            <!--Section Portfolio-->
-            
-            <section class="portfolio section">
-        
-            <!-- Buttons-->
-        <div class="container">
-            <h1  class="visually-hidden">Portfolio</h1>
-            <ul class="portfolio__list list">
-                <li class="portfolio__item">
-                    <button class="portfolio__btn--all" type="button">All</button>
-                </li>
-                <li class="portfolio__item">
-                    <button class="portfolio__btn" type="button">Web-sites</button>
-                </li>
-                <li class="portfolio__item">
-                    <button class="portfolio__btn" type="button">Apps</button>
-                </li>
-                <li class="portfolio__item">
-                    <button class="portfolio__btn" type="button">Design</button>
-                </li>
-                <li class="portfolio__item">
-                    <button class="portfolio__btn" type="button">Marketing</button>
-                </li>
-            </ul>
-    
-        <!-- Projects -->
-            <ul class="projects__list list card-set">
-                <li class="projects__item card-set">
-                    <a class="projects__link" href="./portfolio.html">
-                    <div class="projects__thumb">
+</div>
+    </header>
 
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-1@1x.webp 1x, ./images/gallery/portfolio/desktop/project-1@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-1t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-1t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-1m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-1m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-1@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-1@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-1t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-1t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-1m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-1m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-1@1x.jpg"
-                    alt="our people make the difference"
-                    width="450"
-                    height=""
-                    />
+
+<main>
+
+    <section class="section portfolio">
+    <h1 class="visually-hidden">Portfolio</h1>
+
+    <div class="container">
+        <!--buttons list-->
+        <ul class="portfolio-filter">
+        <li class="item"><button type="button"
+            class="btn portfolio-filter__btn portfolio-filter__btn--active">All</button></li>
+        <li class="item"><button type="button" class="btn portfolio-filter__btn">Web-sites</button></li>
+        <li class="item"><button type="button" class="btn portfolio-filter__btn">Apps</button></li>
+        <li class="item"><button type="button" class="btn portfolio-filter__btn">Design</button></li>
+        <li class="item"><button type="button" class="btn portfolio-filter__btn">Marketing</button></li>
+        </ul>
+
+        <!--projects-->
+        <ul class="project-set">
+
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-1@1x.webp 1x, ./images/gallery/portfolio/desktop/project-1@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-1t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-1t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-1m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-1m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-1@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-1@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-1t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-1t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-1m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-1m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-1@1x.jpg"
+                    alt="our people make the difference" width="450" height="" />
                 </picture>
 
-                <div class="overlay">
-                    <p class="overlay__description">
-                    Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.
-                    </p>
-                </div>
-                </div>
-                    <div class="projects__info">
-                        <h2 class="projects__title">Technoduck</h2>
-                        <p class="projects__description">Web-site</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="project__link" href="./portfolio.html">
-                        
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-2@1x.webp 1x, ./images/gallery/portfolio/desktop/project-2@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-2t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-2t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-2m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-2m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-2@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-2@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-2t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-2t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-2m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-2m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-2@1x.jpg"
-                    alt="basketball players"
-                    width="450"
-                    height=""
-                    />
+                <p class="project__overlay-desc">
+                    Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers
+                </p>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Technoduck</h2>
+                <p class="project__type">Web-site</p>
+            </div>
+            </a>
+        </li>
+
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-2@1x.webp 1x, ./images/gallery/portfolio/desktop/project-2@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-2t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-2t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-2m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-2m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-2@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-2@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-2t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-2t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-2m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-2m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-2@1x.jpg"
+                    alt="basketball players" width="450" height="" />
                 </picture>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Poster New Orlean vs Golden Star</h2>
+                <p class="project__type">Design</p>
+            </div>
+            </a>
+        </li>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Poster New Orlean vs Golden Star</h2>
-                        <p class="projects__description">Design</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="projects__link" href="./portfolio.html">
-                        
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-3@1x.webp 1x, ./images/gallery/portfolio/desktop/project-3@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-3t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-3t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-3m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-3m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-3@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-3@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-3t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-3t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-3m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-3m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-3@1x.jpg"
-                    alt="fish"
-                    width="450"
-                    height=""
-                    />
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-3@1x.webp 1x, ./images/gallery/portfolio/desktop/project-3@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-3t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-3t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-3m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-3m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-3@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-3@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-3t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-3t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-3m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-3m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-3@1x.jpg" alt="fish"
+                    width="450" />
                 </picture>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Seafood Restaurant</h2>
+                <p class="project__type">Apps</p>
+            </div>
+            </a>
+        </li>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Seafood Restaurant </h2>
-                        <p class="projects__description">Apps</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="projects__link" href="./portfolio.html">
-                        
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-4@1x.webp 1x, ./images/gallery/portfolio/desktop/project-4@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-4t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-4t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-4m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-4m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-4@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-4@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-4t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-4t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-4m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-4m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-4@1x.jpg"
-                    alt="headphone"
-                    width="450"
-                    height=""
-                    />
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-4@1x.webp 1x, ./images/gallery/portfolio/desktop/project-4@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-4t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-4t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-4m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-4m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-4@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-4@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-4t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-4t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-4m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-4m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-4@1x.jpg" alt="headphone"
+                    width="450" />
                 </picture>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Project Prime</h2>
+                <p class="project__type">Marketing</p>
+            </div>
+            </a>
+        </li>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Project Prime</h2>
-                        <p class="projects__description">Marketing</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="projects__link" href="./portfolio.html">
-                        
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-5@1x.webp 1x, ./images/gallery/portfolio/desktop/project-5@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-5t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-5t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-5m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-5m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-5@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-5@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-5t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-5t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-5m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-5m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-5@1x.jpg"
-                    alt="boxes"
-                    width="450"
-                    height=""
-                    />
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-5@1x.webp 1x, ./images/gallery/portfolio/desktop/project-5@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-5t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-5t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-5m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-5m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-5@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-5@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-5t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-5t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-5m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-5m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+                
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-5@1x.jpg" alt="boxes"
+                    width="450" />
                 </picture>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Project Boxes</h2>
+                <p class="project__type">Apps</p>
+            </div>
+            </a>
+        </li>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Project Boxes</h2>
-                        <p class="projects__description">Apps</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="projects__link" href="./portfolio.html">
-                    
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-6@1x.webp 1x, ./images/gallery/portfolio/desktop/project-6@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-6t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-6t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-6m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-6m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-6@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-6@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-6t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-6t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-6m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-6m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-6@1x.jpg"
-                    alt="monitor"
-                    width="450"
-                    height=""
-                    />
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-6@1x.webp 1x, ./images/gallery/portfolio/desktop/project-6@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-6t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-6t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-6m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-6m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-6@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-6@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-6t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-6t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-6m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-6m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-6@1x.jpg"
+                    alt="monitor" width="450" />
                 </picture>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Inspiration has no Borders</h2>
+                <p class="project__type">Web-site</p>
+            </div>
+            </a>
+        </li>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Inspiration has no Borders</h2>
-                        <p class="projects__description">Web-site</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="link" href="./portfolio.html">
-                        
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-7@1x.webp 1x, ./images/gallery/portfolio/desktop/project-7@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-7t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-7t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-7m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-7m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-7@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-7@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-7t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-7t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-7m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-7m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-7@1x.jpg"
-                    alt="book"
-                    width="450"
-                    height=""
-                    />
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-7@1x.webp 1x, ./images/gallery/portfolio/desktop/project-7@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-7t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-7t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-7m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-7m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-7@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-7@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-7t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-7t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-7m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-7m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-7@1x.jpg" alt="book"
+                    width="450" />
                 </picture>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Limited Edition</h2>
+                <p class="project__type">Design</p>
+            </div>
+            </a>
+        </li>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Limited Edition</h2>
-                        <p class="projects__description">Design</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="projects__link" href="./portfolio.html">
-                        
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-8@1x.webp 1x, ./images/gallery/portfolio/desktop/project-8@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-8t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-8t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-8m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-8m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-8@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-8@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-8t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-8t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-8m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-8m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-8@1x.jpg"
-                    alt="label"
-                    width="450"
-                    height=""
-                    />
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-8@1x.webp 1x, ./images/gallery/portfolio/desktop/project-8@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-8t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-8t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-8m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-8m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-8@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-8@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-8t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-8t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-8m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-8m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-8@1x.jpg" alt="label"
+                    width="450" />
                 </picture>
+            </div>
+            <div class="project__content">
+                <h2 class="project__name">Project LAB</h2>
+                <p class="project__type">Marketing</p>
+            </div>
+            </a>
+        </li>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Project LAB</h2>
-                        <p class="projects__description">Marketing</p>
-                    </div>
-                    </a>
-                </li>
-                <li class="projects__item card-set">
-                    <a class="projects-link" href="./portfolio.html">
-                        
-                        <picture>
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-9@1x.webp 1x, ./images/gallery/portfolio/desktop/project-9@2x.webp 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-9t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-9t@2x.webp 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-9m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-9m@2x.webp 2x"
-                            media="(max-width: 767px)" />
-        
-                            <source
-                            srcset="./images/gallery/portfolio/desktop/project-9@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-9@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/tablet/project-9t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-9t@2x.jpg 2x"
-                            media="(min-width: 768px)" />
-                            <source
-                            srcset="./images/gallery/portfolio/mobile/project-9m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-9m@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        
-                        <img
-                    class="img"
-                    src="./images/gallery/portfolio/desktop/project-9@1x.jpg"
-                    alt="laptop"
-                    width="450"
-                    height=""
-                    />
+        <li class="item project">
+            <a href="" class="link project__link">
+            <div class="project__thumb">
+                <picture>
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-9@1x.webp 1x, ./images/gallery/portfolio/desktop/project-9@2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-9t@1x.webp 1x, ./images/gallery/portfolio/tablet/project-9t@2x.webp 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-9m@1x.webp 1x, ./images/gallery/portfolio/mobile/project-9m@2x.webp 2x"
+                    media="(max-width: 767px)" />
+
+                    <source
+                    srcset="./images/gallery/portfolio/desktop/project-9@1x.jpg 1x, ./images/gallery/portfolio/desktop/project-9@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/tablet/project-9t@1x.jpg 1x, ./images/gallery/portfolio/tablet/project-9t@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source
+                    srcset="./images/gallery/portfolio/mobile/project-9m@1x.jpg 1x, ./images/gallery/portfolio/mobile/project-9m@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                <img class="img project__img" src="./images/gallery/portfolio/desktop/project-9@1x.jpg"
+                    alt="laptop" width="450" />
                 </picture>
+            </div>
 
-                    <div class="projects__info">
-                        <h2 class="projects__title">Growing Business</h2>
-                        <p class="projects__description">Apps</p>
-                    </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        </section>
-        </main>
-        
-        
-        <!--Footer-->
+            <div class="project__content">
+                <h2 class="project__name">Growing Business</h2>
+                <p class="project__type">Apps</p>
+            </div>
+            </a>
+        </li>
+        </ul>
+    </div>
+    </section>
+</main>
 
-    <footer class="footer">
-        <div class="container">
-        <div class="adress-wrapper">
-        <a class="footer__logo" href="./index.html">
-        <span class="footer__logo--accent">Web</span>Studio</a>
-        <address class="adress">
-            <ul class="content list">
-                <li class="content"><a class="adress__link" href="https://https://goo.gl/maps/fF9Ta2Md7pspU1L37" target="_blank"
-                    rel="noopener noreferrer">695 Park Ave, New York, NY 10065, United States"
-                </a></li>
-                <li class="content"><a class="contact__link" href="mailto:info@example.com">info@example.com</a></li>
-                <li class="content"><a class="contact__link" href="tel:+1127724150">+1 212-772-4150</a></li>
+<!--footer-->
+<footer class="footer">
+    <div class="container footer-container">
+
+    <div class="footer-upper-block">
+        <!-- address -->
+        <div class="address-box">
+        <a class="link logo footer__logo" href="./index.html">Web<span class="logo__accent--light">Studio</span></a>
+
+        <address id="contacts" class="address">
+            <ul class="address__list">
+            <li class="item address__item"><a class="link address__map" target="_blank" rel="norefferer nofollow"
+                href="https://https://goo.gl/maps/fF9Ta2Md7pspU1L37">695 Park Ave, New York, NY 10065, United States</a></li>
+            <li class="item address__item"><a class="link address__email"
+                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item address__item"><a class="link address__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
             </ul>
         </address>
         </div>
-<div class="socials-link-wrapper">
-            <h2 class="footer__title">FIND US ON</h2>
-            <ul class="footer__list">
-                <li class="footer__item">
-                <a
-                class="footer__link link"
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram">
-                    <svg class="icon" width="20" height="20">
-                    <use href="./images/gallery/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-                </li>
 
-                <li class="footer__item">
-                <a
-                    class="footer__link link"
-                    href="https://twitter.com"
-                    aria-label="Twitter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                <svg class="icon" width="20" height="20">
-                    <use href="./images/gallery/icons.svg#icon-twitter"></use>
+        <!-- join -->
+        <div class="join">
+        <h3 class="footer__subtitle">FIND US ON</h3>
+
+        <ul class="social-group">
+            <li class="item social-group__item ">
+            <a class="link social-group__link social-group__link--accent-bg" href="https://www.instagram.com/"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="social-group__icon social-group__icon--accent-color" width="20" height="20">
+                <use href="./images/gallery/icons.svg#icon-instagram"></use>
                 </svg>
-                </a>
-                </li>
-
-                <li class="footer__item">
-                <a
-                    class="footer__link  link"
-                    href="https://facebook.com"
-                    aria-label="Facebook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                <svg class="icon" width="20" height="20">
-                    <use href="./images/gallery/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-                </li>
-
-                <li class="footer__item">
-                <a
-                    class="footer__link  link"
-                    href="https://linkedin.com"
-                    aria-label="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                <svg class="icon" width="20" height="20">
-                    <use href="./images/gallery/icons.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
-                            </li>
-                            </ul>
+            </a>
+            </li>
+            <li class="item social-group__item">
+            <a class="link social-group__link social-group__link--accent-bg" href="https://www.twitter.com/"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="social-group__icon social-group__icon--accent-color" width="20" height="20">
+                <use href="./images/gallery/icons.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            </li>
+            <li class="item social-group__item">
+            <a class="link social-group__link social-group__link--accent-bg" href="https://www.facebook.com/"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="social-group__icon social-group__icon--accent-color" width="20" height="20">
+                <use href="./images/gallery/icons.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            </li>
+            <li class="item social-group__item">
+            <a class="link social-group__link social-group__link--accent-bg" href="https://www.linkedin.com/"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="social-group__icon social-group__icon--accent-color" width="20" height="20">
+                <use href="./images/gallery/icons.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+            </li>
+        </ul>
+        </div>
     </div>
-    
-    <!--subscription-->
-    <div class="subscription">
-        <form class="subscription__form">
-        <label class="subscription__label">
-        <span class="subscription__title">Subscribe to the newsletter</span>
-        <input class="subscription__input" type="email" name="email" placeholder="E-mail" required>
-            </label>
-            
-        <button class="btn btn--send" type="submit">Suscribe
-            <svg class="icon btn__icon--send" width="24" height="24">
-            <use href="./images/gallery/icons.svg#icon-send"></use>
+
+    <!-- subscribe -->
+    <div class="subscribe">
+        <form class="subscribe-form">
+        <label class="label-footer">
+            <span class="footer__subtitle">Subscribe to the newsletter</span>
+            <input class="label-footer__input" type="email" name="email" placeholder="E-mail" required>
+        </label>
+
+        <button class="btn footer-button" type="submit">
+            Suscribe
+            <svg class="footer-button__icon" width="24" height="24">
+            <use href="/images/gallery/icons.svg#icon-send"></use>
             </svg>
         </button>
         </form>
     </div>
     </div>
-    
-    </footer>
-        
+</footer>
 
-    
+
+<!-- mobile menu -->
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="./js/mobile-menu.js"></script>
+
     </body>
     </html>

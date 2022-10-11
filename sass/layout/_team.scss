@@ -1,47 +1,96 @@
-.team  {
-    background-color: $accent-bg-cl;
-    font-size: 16px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+.team {
+    background-color: $section-background-color;
+}
 
-    &__main-title {
-        margin-bottom: 50px;
-        font-size: 36px;
+@media screen and (max-width:767px) {
+    .team-member:not(:last-of-type) {
+        margin-bottom: 30px;
     }
-    
-    &__list {
-    display: flex;
-    flex: wrap;
-    gap: $indent;
-    padding-left: 0;
-    }
+}
 
-    &-list__item {
-        background: $second-bg-color;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-    }
-    
-    
-    &__title {
-        font-weight: 500;
-        line-height: calc(18 / 16);
-        font-size: 16px;
-    }
-    
-    &__subtitle  {
-        line-height: calc(19 / 16);
-        color: $txt-cl;
-        text-align: center;
-        margin-top:  10px;
-        font-size: 16px;
-        margin-bottom: 16px;
-    }
-    
-    &__wrap {
-        padding: 30px 32px;
+.team-list {
+
+    @include breakpoint-min($tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .team-member {
+            width: calc((100% - 30px * 1) / 2);
         }
+    }
+
+    @include breakpoint-min($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .team-member {
+            width: calc((100% - 30px * 3) / 4);
+        }
+    }
+
 }
 
 
+.team-member {
+    width: 100%;
+    background-color: $primary-white-color;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        font-weight: 500;
+        line-height: 1.17;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        color: $secondary-text-color;
+        line-height: 1.17;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__item {
+        background-color: $primary-white-color;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        font-weight: 500;
+        line-height: 1.17;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        color: $secondary-text-color;
+        line-height: 1.17;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}

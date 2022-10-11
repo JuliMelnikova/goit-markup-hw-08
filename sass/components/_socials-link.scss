@@ -1,0 +1,39 @@
+.social-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    &__link {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        @include transition(background-color);
+    }
+
+    &__icon {
+        fill: $icons-color;
+        @include transition(fill);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-color;
+    }
+}
+
+.social-group__link:hover .social-group__icon,
+.social-group__link:focus .social-group__icon {
+    fill: $primary-white-color;
+}
+
+
+.social-group__link--accent-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-group__icon--accent-color {
+    fill: $primary-white-color;
+}

@@ -1,7 +1,10 @@
 body {
     font-family: $main-font;
     font-size: 14px;
-    color: $main-txt-cl;
-    background-color: $second-bg-color;
     letter-spacing: 0.03em;
-    }
+    color: $primary-text-color;
+}
+
+body.modal-open {
+    overflow: hidden;
+}

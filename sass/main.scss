@@ -1,17 +1,19 @@
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './utils/visually-hidden';
 @import './utils/mixins';
 
-@import './base/reset';
 @import './base/container';
+@import './base/reset';
 
-@import'./components/base';
-@import './components/card-set';
-@import'./components/section';
-@import './components/soc-network';
+@import './components/base';
+@import './components/section';
+@import './components/hero-title';
+@import './components/section-title';
+@import './components/logo';
+@import './components/btn';
+@import './components/socials-link';
 @import './components/modal';
-@import './components/register-form';
-
 
 @import './layout/header';
 @import './layout/hero';
@@ -20,7 +22,4 @@
 @import './layout/team';
 @import './layout/customers';
 @import './layout/footer';
-@import './layout/subscription';
 @import './layout/portfolio';
-
-
