@@ -84,7 +84,8 @@
             margin-left: auto;
             }
         
-            &__link {
+
+                &__link {
             display: flex;
             line-height: calc(16 / 14);
             align-items: center;
@@ -103,8 +104,5 @@
             margin-right: 10px;
             fill: currentColor;
             }
-    }
-    
-    
-    
-    
+
+        }
