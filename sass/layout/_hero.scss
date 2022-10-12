@@ -38,6 +38,7 @@
     &__btn:hover,
     &__btn:focus {
         background-color: $hero-btn-hover-color;
+        color: turquoise;
     }
 
     @media screen and (min-width:576px) {

@@ -784,6 +784,7 @@ body.modal-open {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188CE8;
+  color: turquoise;
 }
 @media screen and (min-width: 576px) {
   .hero {
